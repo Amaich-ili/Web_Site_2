@@ -1,11 +1,12 @@
 /* Start variable */
-:root{
-    --main-color:#19c8fa;
+:root {
+    --main-color: #19c8fa;
     --transparent-color: rgba(35, 70, 80, 0.7);
     --transparent-color1: rgba(15 116 143 / 70%);
-    --color-secondary:#6c7;
+    --color-secondary: #6c7;
     --section-padding: 100px;
 }
+
 /* End Variable */
 /* Start Global Rules*/
 * {
@@ -26,7 +27,7 @@ html {
     /* background-color: black; */
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -62,18 +63,19 @@ ul{
 
 /* Start Components */
 
-.main-heading{
+.main-heading {
     text-align: center;
 }
 
-.main-heading h2{
+.main-heading h2 {
     position: relative;
     font-size: 40px;
     font-weight: normal;
-    margin-bottom:70px ;
+    margin-bottom: 70px;
     text-transform: uppercase;
 }
-.main-heading h2::before{
+
+.main-heading h2::before {
     content: "";
     left: 50%;
     transform: translateX(-50px);
@@ -84,7 +86,7 @@ ul{
     bottom: -25px;
 }
 
-.main-heading h2::after{
+.main-heading h2::after {
     content: "";
     left: 50%;
     position: absolute;
@@ -97,24 +99,25 @@ ul{
     bottom: -32px;
 }
 
-.main-heading p{
+.main-heading p {
     width: 550px;
     margin: 0 auto 100px;
     max-width: 100%;
     line-height: 2;
     color: #777;
 }
+
 /* End Components */
 
 /* Start header */
-header{
+header {
     position: absolute;
     left: 0;
     width: 100%;
     z-index: 2;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +125,7 @@ header .container{
     min-height: 97px;
 }
 
-header .container::after{
+header .container::after {
     content: "";
     background-color: #a2a2a2;
     position: absolute;
@@ -132,44 +135,44 @@ header .container::after{
     left: 15px;
 }
 
-header .container .logo{
+header .container .logo {
     height: 80px;
     margin-bottom: 10px;
 }
 
-header .container .logo img{
+header .container .logo img {
     height: 100%;
 }
 
-header nav{
+header nav {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-header nav .toggle-menu{
+header nav .toggle-menu {
     color: white;
     font-size: 20px;
 }
 
-@media (min-width: 768px){
-    header nav .toggle-menu{
+@media (min-width: 768px) {
+    header nav .toggle-menu {
         display: none;
     }
 }
 
-header nav ul{
+header nav ul {
     display: flex;
 }
 
-@media (max-width:769px){
-    header nav ul{
+@media (max-width:769px) {
+    header nav ul {
         display: none;
     }
 }
 
-header nav .toggle-menu:hover + ul{
+header nav .toggle-menu:hover+ul {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -177,16 +180,16 @@ header nav .toggle-menu:hover + ul{
     left: 0;
     width: 100%;
     background-color: rgb(0 0 0 / 50%);
-    
+
 }
 
-header nav ul li a{
-    /* header nav .toggle-menu:hover + ul li a{ */ 
+header nav ul li a {
+    /* header nav .toggle-menu:hover + ul li a{ */
     /* if you need to use !important  you have to remove .toggle-menu:hover*/
     padding: 15px !important;
 }
 
-header nav ul li a{
+header nav ul li a {
     color: white;
     display: block;
     font-size: 14px;
@@ -198,19 +201,20 @@ header nav ul li a{
 }
 
 header nav ul li a.active,
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
 }
 
-header nav .form{
+header nav .form {
     width: 40px;
     height: 30px;
     position: relative;
     margin-left: 30px;
-    border-left: 1px solid white ;
+    border-left: 1px solid white;
 }
-header nav .form i{
+
+header nav .form i {
     color: white;
     font-size: 20px;
     padding-left: 20px;
@@ -218,17 +222,19 @@ header nav .form i{
     transform: translateY(10%);
     right: 0;
 }
+
 /* End header */
 
 /* Start Landing */
-.landing{
+.landing {
     min-height: 100vh;
     background-color: rgb(58, 50, 50);
     background-image: url(../images/bg2.jpg);
     background-size: cover;
 }
-.landing .overlay{
-    position:absolute;
+
+.landing .overlay {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -236,7 +242,7 @@ header nav .form i{
     background-color: var(--transparent-color);
 }
 
-.landing .text{
+.landing .text {
     position: absolute;
     left: 0;
     top: 50%;
@@ -247,55 +253,56 @@ header nav .form i{
     color: white;
     display: flex;
     justify-content: flex-end;
-} 
+}
 
-@media(max-width:768px){
-    .landing .text{
+@media(max-width:768px) {
+    .landing .text {
         width: 100%;
     }
-    .landing .text .content{
+
+    .landing .text .content {
         max-width: 100%;
     }
 }
 
-.landing .text .content{
+.landing .text .content {
     max-width: 400px;
 }
 
-.landing .text .content h2{
+.landing .text .content h2 {
     font-size: 32px;
     font-weight: normal;
     line-height: 1.5;
     padding-bottom: 20px;
 }
 
-.landing .text .content p{
+.landing .text .content p {
     font-size: 14px;
     line-height: 2;
 }
 
-.landing .change-background{
+.landing .change-background {
     position: absolute;
     top: 50%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     color: #ddd;
 }
 
-@media(max-width:768px){
-    .landing .change-background{
+@media(max-width:768px) {
+    .landing .change-background {
         display: none;
     }
 }
 
-.landing .fa-angle-left{
+.landing .fa-angle-left {
     left: 30px;
 }
 
-.landing .fa-angle-right{
+.landing .fa-angle-right {
     right: 30px;
 }
 
-.landing .bullets{
+.landing .bullets {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -303,7 +310,7 @@ header nav .form i{
     display: flex;
 }
 
-.landing .bullets li{
+.landing .bullets li {
     width: 15px;
     height: 15px;
     border: 1px solid white;
@@ -311,35 +318,138 @@ header nav .form i{
     margin-right: 10px;
 }
 
-.landing .bullets li.active{
+.landing .bullets li.active {
     background-color: var(--main-color);
 }
+
 /* End Landing */
 
 /* End Services */
 
-.services{
+.services {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
 
-.services .srv-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+@media(min-width:768px) {
+    .services .service-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 50px;
+    }
 }
-.services .srv-box i{
+
+.services .srv-box {
+    display: flex;
+}
+
+@media (max-width:767px) {
+    .services .srv-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services .srv-box i {
+        margin: 30px;
+    }
+}
+
+.services .srv-box i {
     margin-right: 50px;
 }
 
-.services .srv-box h3{
+.services .text {
+    padding-bottom: 25px;
+
+}
+
+.services .srv-box h3 {
     color: var(--main-color);
     margin-bottom: 30px;
 }
 
-.services .srv-box p{
-
+.services .srv-box p {
+    line-height: 1.6;
+    color: #777;
 }
 
 /* End Services */
+
+/* Start Design */
+
+.design {
+    padding-bottom: var(--section-padding);
+    padding-top: var(--section-padding);
+    background-image: url(../images/paysage.jpg);
+    background-color: var(--color-secondary);
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.design::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--transparent-color);
+}
+
+.design .image,
+.design .text {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.design .image {
+    text-align: center;
+    height: 700px;
+}
+
+@media (max-width:767px) {
+    .design .image {
+        display: none;
+    }
+}
+
+.design .image img {
+    position: relative;
+    height: 100%;
+    bottom: -160px;
+}
+
+.design .text {
+    position: relative;
+    padding: 30px;
+    background-color: var(--transparent-color1);
+    color: white;
+}
+
+.design .text h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.design .text ul li {
+    padding: 15px 0;
+}
+
+.design .text ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\e4e5";
+    font-weight: 900;
+    margin-right: 20px;
+    /* position: relative; */
+    /* top: -1px; */
+}
+
+/* End Design */
