@@ -853,6 +853,7 @@ border-bottom: 1PX solid #CCC;
     font-size: 18px;
     margin:0 10px;
 }
+
 .quote .container p{
     font-size: 30px;
     margin-bottom: 20px;
@@ -866,3 +867,40 @@ border-bottom: 1PX solid #CCC;
 }
 
 /* End Quote */
+
+/* Start Pricing */
+
+.pricing{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing .plans{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.pricing .plans .plan{
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.pricing .plans .plan head{
+    padding: 40px 20px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan .head h3{
+
+}
+
+.pricing .plans .plan .head span::before{
+    content: "$";
+}
+
+.pricing .plans .plan .head span::after{
+    content: "/Mo";
+}
+/* End Pricing */
