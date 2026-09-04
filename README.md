@@ -29,12 +29,17 @@ Le site s'adapte à toutes les tailles d'écran :
 
 ## 📂 Structure
 
+```text
 Web_Site_2/
-├── index.html # Page principale
+│
+├── index.html              # Page principale HTML
+│
 ├── css/
-│ └── style.css # Tous les styles
-└── assets/
-└── images/ # Images du site
+│   └── style.css           # Tous les styles (Flexbox, Grid, Media Queries)
+├── images/          
+│ 
+└── README.md               
+```
 
 
 ## 🚀 Aperçu
